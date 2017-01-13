@@ -18,7 +18,7 @@ namespace IPC.Fueling
                         new SiteConfig
                         {
                             Key = "RemoteEndpoint",
-                            Address = "http://fireballdevstaging.canadacentral.cloudapp.azure.com:25000/Fueling/",
+                            Address = "http://localhost:25000/Fueling/",
                             ChannelType = "Http"
                         }                      
                     },

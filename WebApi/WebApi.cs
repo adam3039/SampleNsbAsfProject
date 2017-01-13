@@ -48,8 +48,8 @@ namespace WebApi
             return new ServiceInstanceListener[]
             {
                 new ServiceInstanceListener(serviceContext => new OwinCommunicationListener(Startup.ConfigureApp, serviceContext, ServiceEventSource.Current, "ServiceEndpoint"), "ApiListener")
-                ,
-                new ServiceInstanceListener(context => new HttpCommunicationListener(context,ServiceEventSource.Current),"RemoteListener")
+                //,
+                //new ServiceInstanceListener(context => new HttpCommunicationListener(context,ServiceEventSource.Current),"RemoteListener")
             };
         }
     }

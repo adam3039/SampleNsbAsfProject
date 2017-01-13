@@ -15,7 +15,7 @@ namespace WebApi.Handlers
         public Task Handle(AsbMessage message, IMessageHandlerContext context)
         {
             ServiceEventSource.Current.ServiceMessage(ServiceContext, "Transaction message received");
-            return null;
+            return Task.CompletedTask;
         }
     }
 }
