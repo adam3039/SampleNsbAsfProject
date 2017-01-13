@@ -29,9 +29,7 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FCS.FuelingTransactions\FCS.FuelingTransactions.csproj" />
     <ProjectReference Include="..\FCS.WebUI\FCS.WebUI.xproj" />
-    <ProjectReference Include="..\RemoteProxy\RemoteProxy.csproj" />
     <ProjectReference Include="..\WebApi\WebApi.csproj" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
