@@ -7,8 +7,8 @@
     <ProjectGuid>{8CCC7158-8C93-4CFA-8FBD-47196D477C42}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>IPC.Fueling</RootNamespace>
-    <AssemblyName>IPC.Fueling</AssemblyName>
+    <RootNamespace>Sender</RootNamespace>
+    <AssemblyName>Sender</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -77,12 +77,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Shared\Shared.csproj">
-      <Project>{FB8761E3-DE5E-4E1D-9559-DFA0158A1DBD}</Project>
-      <Name>Shared</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
@@ -94,6 +88,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <Import Project="..\Contracts\Contracts.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -29,8 +29,7 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FCS.WebUI\FCS.WebUI.xproj" />
-    <ProjectReference Include="..\WebApi\WebApi.csproj" />
+    <ProjectReference Include="..\Receiver\Receiver.csproj" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
   <PropertyGroup>
